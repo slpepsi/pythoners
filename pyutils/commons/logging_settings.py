@@ -3,9 +3,9 @@ import logging.config
 import sys
 from logging.handlers import RotatingFileHandler
 
-
-reload(sys)
-sys.setdefaultencoding('utf8')
+if sys.version_info == 2:
+    reload(sys)
+    sys.setdefaultencoding('utf8')
 
 
 class MyLogger(object):
