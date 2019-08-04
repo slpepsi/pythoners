@@ -4,6 +4,10 @@ import sys
 from logging.handlers import RotatingFileHandler
 
 
+reload(sys)
+sys.setdefaultencoding('utf8')
+
+
 class MyLogger(object):
     def __init__(self):
         pass
